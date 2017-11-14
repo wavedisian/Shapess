@@ -30,7 +30,6 @@ public class ShapeUtilities {
 		}
 
 	}
-
 	/**
 	 * adds up the area of all the shapes in the array
 	 * 
@@ -38,8 +37,9 @@ public class ShapeUtilities {
 	 * @return double
 	 */
 	public static double sumArea(Shape[] shapes) {
-		// To be written by student
-		return 0.0;
+		double sumArea= 0;
+		
+		return sumArea;
 	}
 
 	/**
@@ -49,8 +49,11 @@ public class ShapeUtilities {
 	 * @return double
 	 */
 	public static double sumPerimeter(Shape[] shapes) {
-		// To be written by student
-		return 0.0;
+		double sumarea = 0;
+		for (int i = 0; i < shapeArr.length; i++) {
+			 shapeArr[i].calulateArea();
+		}
+		return sumperi;
 	}
 
 }
