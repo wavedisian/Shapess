@@ -9,7 +9,7 @@ public class Rhombus extends Triangle
 	{
 		super(side, side, angle);
 		this.side = side;
-		this.angle = angle;
+		this.angle = Math.toRadians(angle);
 	}
 	public double calculatePerimeter()
 	{
@@ -19,8 +19,8 @@ public class Rhombus extends Triangle
 	public String toString()
 	{
 		return "Rhombus Side Length " + this.side +
-				"Angle " + this.angle +
-				"Area: " + 2*calculateArea() +
-				"Perimeter: " + calculatePerimeter();
+				" Angle " + this.angle*180/3.14159265 +
+				" Area: " + 2*calculateArea() +
+				" Perimeter: " + calculatePerimeter();
 	}
 }

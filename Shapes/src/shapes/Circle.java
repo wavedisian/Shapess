@@ -4,7 +4,8 @@ package shapes;
  * @author Mr Levin Created 10/16/2017 Lab 2.1 shapes 
  *
  */ 
-public class Circle implements Shape {
+public class Circle implements Shape 
+{
 
 	// fields
 	private int radius;
@@ -34,7 +35,9 @@ public class Circle implements Shape {
 	@Override
 	public String toString() 
 	{
-		String circle = "Circle of radius " + this.radius;
+		String circle = "Circle of radius " + this.radius +
+						" Perimeter: " + this.calculatePerimeter() +
+						" Area: " + this.calculateArea();
 		return(circle);
 	}
 }

@@ -16,19 +16,21 @@ package shapes;
 public class Runner {
 
 	public static void main(String[] args) {
-		Shape circle1 = new Circle(3);
-		Shape rectangle1 = new Rectangle(10, 4);
-		Shape square1 = new Square(10);
+		Shape circle1 = new Circle(1);
+		Shape rectangle1 = new Rectangle(1, 1);
+		Shape square1 = new Square(1);
+		Shape triangle1 = new Triangle(3, 4, 90);
+		Shape rhombus1 = new Rhombus(1, 30);
 
 		System.out.println("First test out the hard coded shape arraay.\n\n");
-		Shape[] shapeArr = { circle1, rectangle1, square1 };
+		Shape[] shapeArr = { circle1, rectangle1, square1, triangle1, rhombus1 };
 		for (Shape shape : shapeArr) {
 			System.out.println(shape);
 		}
-		System.out.println("\nDid the three shapes above add up to the total printed here?\n");
+		System.out.println("\nDid the five shapes above add up to the total printed here?\n");
 		System.out.println("Total Area: " + ShapeUtilities.sumArea(shapeArr)); // 168.26
 		System.out.println("Total Perimeter: " + ShapeUtilities.sumPerimeter(shapeArr)); // 86.84
-		System.out.println("\nDid the three shapes above add up to the total printed here?\n");
+		System.out.println("\nDid the five shapes above add up to the total printed here?\n");
 
 		System.out.println("\n\n Now testing the random array.\n");
 

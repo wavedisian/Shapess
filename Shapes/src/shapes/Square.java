@@ -1,6 +1,7 @@
 package shapes;
 
-public class Square extends Rectangle {
+public class Square extends Rectangle 
+{
 
 	int side;
 
@@ -12,8 +13,8 @@ public class Square extends Rectangle {
 	@Override
 	public String toString() {
 		return "Square Side Length " + this.side + 
-			   "Area: " + calculateArea() +
-			   "Perimeter: " + calculatePerimeter();
+			   " Area: " + calculateArea() +
+			   " Perimeter: " + calculatePerimeter();
 	}
 
 }
