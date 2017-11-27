@@ -64,5 +64,23 @@ public class ShapeUtilities {
 		}
 		return sumperi;
 	}
+	public static void countShapes(Shape[] shapes)
+	{
+		int rectangles = 0;
+		int circles = 0;
+		for (Shape x : shapes)
+		{
+			if (x instanceof Circle)
+			{
+				circles ++;
+			}
+			if (x instanceof Rectangle)
+			{
+				rectangles ++;
+			}
+			System.out.println(circles + " Circles Found and " + rectangles + "rectangles.");
+		}
+				
+	}
 
 }
