@@ -48,6 +48,7 @@ public class Runner {
 		System.out.println("\nTotal Area: " + ShapeUtilities.sumArea(shapeArr));
 		System.out.println("Total Perimeter: " + ShapeUtilities.sumPerimeter(shapeArr));
 
+		ShapeUtilities.countShapes(shapeArr);
 	}
 
 }

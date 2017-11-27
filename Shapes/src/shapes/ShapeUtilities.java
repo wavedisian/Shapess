@@ -78,8 +78,9 @@ public class ShapeUtilities {
 			{
 				rectangles ++;
 			}
-			System.out.println(circles + " Circles Found and " + rectangles + "rectangles.");
+			
 		}
+		System.out.println(circles + " Circles found and " + rectangles + " Rectangles.");
 				
 	}
 
